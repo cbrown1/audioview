@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+audioview/audioview.py
+audioview.egg-info/PKG-INFO
+audioview.egg-info/SOURCES.txt
+audioview.egg-info/dependency_links.txt
+audioview.egg-info/not-zip-safe
+audioview.egg-info/requires.txt
+audioview.egg-info/top_level.txt
