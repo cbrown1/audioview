@@ -1,0 +1,3 @@
+[console_scripts]
+audioview = audioview.audioview:main
+

@@ -5,12 +5,10 @@ Simple script to view soundfiles in the terminal
 
 ## Installing
 
-### Install Dependencies:
+### Install External Dependencies:
 
 ```bash
 sudo pacman -S libsndfile # Or similar
-pip install --user pysndfile
-pip install --user plotext
 ```
 
 ### Download and Install:
@@ -18,12 +16,12 @@ pip install --user plotext
 ```bash
 git clone https://github.com/cbrown1/audioview.git
 cd audioview
-sudo make install
+pip install .
 ```
 
 ## Usage
 
-Just pass the path to a soundfile:
+Just pass the path to a soundfile (no color is shown here):
 
 ```bash
 $ audioview /path/to/amtone.wav
