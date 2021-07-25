@@ -2,26 +2,25 @@
 
 Simple script to view soundfiles in the terminal
 
+audioview depends on [pysndfile](https://forge-2.ircam.fr/roebel/pysndfile) and [plotext](https://github.com/piccolomo/plotext)
 
 ## Installing
 
 ### Install External Dependencies:
 
 ```bash
-sudo pacman -S libsndfile # Or similar
+$ sudo pacman -S libsndfile # Or similar
 ```
 
 ### Download and Install:
 
 ```bash
-git clone https://github.com/cbrown1/audioview.git
-cd audioview
-pip install .
+$ pip install --user git+https://github.com/cbrown1/audioview.git#egg=audioview
 ```
 
 ## Usage
 
-Just pass the path to a soundfile (no color is shown here):
+Just pass a soundfile path as an input argument (no color is shown here):
 
 ```bash
 $ audioview /path/to/amtone.wav
@@ -37,14 +36,19 @@ $ audioview /path/to/amtone.wav
 [y]                                    Time (s) [x]                                   
 
 $ 
+```
 
+You can optionally specify the start and duration times to plot. Here, from 1 sec to 2.5 sec (1.5 s dur) of the soundfile will be plotted:
+
+```bash
+$ audioview /path/to/soundfile 1 1.5 
 ```
 
 ## Notes
 
-- Multi-channel soundfiles should work fine
+- For multi-channel soundfiles, a separate plot will be generated for each channel maintaining y-axis scaling
 
-- This script addressed a need for a super-simple and maintainable python-based way of viewing recorded soundfiles without leaving the terminal
+- This script addressed the need for a super-simple and maintainable python-based way of viewing recorded soundfiles without leaving the terminal
 
 
 ## Authors
