@@ -11,7 +11,7 @@ def plot(data, fs, start=0, dur=None, plot_height=10, color="blue", marker="smal
 
     """
 
-    data = np.atleast_2d(data).T
+    data = np.atleast_2d(data)
 
     start_samp = int(start * fs)
 

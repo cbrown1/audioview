@@ -46,7 +46,7 @@ $ audioview /path/to/soundfile 1 1.5
 
 ## Notes
 
-- For multi-channel soundfiles, a separate plot will be generated for each channel maintaining y-axis scaling
+- For multi-channel soundfiles a separate plot will be generated for each channel, maintaining y-axis scaling
 
 - This script addressed the need for a super-simple and maintainable python-based way of viewing recorded soundfiles without leaving the terminal
 
